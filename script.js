@@ -1,48 +1,3 @@
-// =========================================================
-// LOADER — percentage counter, Selected.-style
-// =========================================================
-(function loader(){
-  const loaderEl = document.getElementById('loader');
-  const pctEl = document.getElementById('loaderPct');
-  let pct = 0;
-  const timer = setInterval(() => {
-    pct += Math.ceil(Math.random() * 14);
-    if (pct >= 100){
-      pct = 100;
-      clearInterval(timer);
-      pctEl.textContent = '100%';
-      setTimeout(() => {
-        loaderEl.classList.add('done');
-        showCookieBanner();
-      }, 250);
-      return;
-    }
-    pctEl.textContent = `${String(pct).padStart(3,'0')}%`;
-  }, 90);
-})();
-
-// =========================================================
-// COOKIE BANNER
-// =========================================================
-function showCookieBanner(){
-  const cookie = document.getElementById('cookie');
-  if (!cookie) return;
-  if (localStorage && localStorage.getItem('cookieChoice')) return; // note: falls back gracefully if unavailable
-  setTimeout(() => cookie.classList.add('show'), 300);
-}
-(function cookieBanner(){
-  const cookie = document.getElementById('cookie');
-  const accept = document.getElementById('cookieAccept');
-  const decline = document.getElementById('cookieDecline');
-  if (!cookie) return;
-
-  function dismiss(choice){
-    cookie.classList.remove('show');
-    try { localStorage.setItem('cookieChoice', choice); } catch(e) {}
-  }
-  accept && accept.addEventListener('click', () => dismiss('accepted'));
-  decline && decline.addEventListener('click', () => dismiss('declined'));
-})();
 
 // =========================================================
 // FULLSCREEN MENU TOGGLE
@@ -124,19 +79,6 @@ function showCookieBanner(){
     timer = setInterval(next, 5000);
   }
   restart();
-})();
-
-// =========================================================
-// NEWSLETTER FORM (placeholder — no backend wired up)
-// =========================================================
-(function newsletter(){
-  const form = document.getElementById('newsletterForm');
-  const note = document.getElementById('newsletterNote');
-  if (!form) return;
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    note.textContent = 'Thanks — check your inbox to confirm.';
-  });
 })();
 
 // =========================================================

@@ -7,11 +7,11 @@
   --fg:        #ede9e2;
   --fg-dim:    #8f897f;
   --fg-faint:  #58534c;
-  --accent:    #3d5aff;   /* broadcast-monitor signal blue */
+  --accent:    #7f94ff;   /* broadcast-monitor signal blue */
   --line:      rgba(237,233,226,0.12);
   --line-soft: rgba(237,233,226,0.06);
 
-  --f-display: 'Anton', sans-serif;
+  --f-display: 'Metal Mania', cursive;
   --f-body:    'Work Sans', sans-serif;
   --f-mono:    'IBM Plex Mono', monospace;
 
@@ -64,37 +64,6 @@ img, video{ display:block; max-width:100%; }
 .cursor.hover-media{ width:64px; height:64px; background:rgba(61,90,255,0.15); border-color:var(--accent); }
 .cursor.hover-media span{ opacity:1; }
 .cursor.hover-link{ width:36px; height:36px; background:var(--fg); border-color:var(--fg); }
-
-/* =========================================================
-   LOADER — percentage counter (Selected.-style "000%")
-   ========================================================= */
-.loader{
-  position:fixed; inset:0; background:var(--bg); z-index:1000;
-  display:flex; align-items:center; justify-content:center;
-  transition:opacity .6s var(--ease), visibility .6s var(--ease);
-}
-.loader.done{ opacity:0; visibility:hidden; }
-.loader-pct{ font-family:var(--f-display); font-size:clamp(48px,8vw,96px); color:var(--fg); letter-spacing:.02em; }
-
-/* =========================================================
-   COOKIE BANNER
-   ========================================================= */
-.cookie{
-  position:fixed; left:var(--gutter); right:var(--gutter); bottom:20px; z-index:900;
-  max-width:640px; background:var(--bg-raise); border:1px solid var(--line);
-  padding:20px 24px; display:flex; flex-wrap:wrap; align-items:center; gap:16px;
-  transform:translateY(140%); transition:transform .5s var(--ease);
-}
-.cookie.show{ transform:translateY(0); }
-.cookie p{ font-size:12px; line-height:1.5; color:var(--fg-dim); flex:1 1 260px; }
-.cookie-actions{ display:flex; gap:10px; }
-.cookie-btn{
-  font-family:var(--f-mono); font-size:11px; letter-spacing:.08em; padding:9px 16px;
-  border:1px solid var(--line); color:var(--fg-dim); transition:all .25s var(--ease);
-}
-.cookie-btn:hover{ color:var(--fg); border-color:var(--fg-dim); }
-.cookie-btn.primary{ background:var(--fg); color:var(--bg); border-color:var(--fg); }
-.cookie-btn.primary:hover{ background:var(--accent); border-color:var(--accent); color:#fff; }
 
 /* =========================================================
    NAV
@@ -288,23 +257,6 @@ section{ position:relative; padding:140px var(--gutter) 0; }
   .session, .session:nth-child(even){ grid-template-columns:1fr; direction:ltr; }
   .session-media{ height:280px; }
 }
-
-/* =========================================================
-   NEWSLETTER
-   ========================================================= */
-.newsletter{ padding-top:140px; padding-bottom:120px; text-align:center; }
-.newsletter h2{ font-family:var(--f-display); font-weight:400; font-size:clamp(32px,5vw,56px); margin:14px 0 40px; }
-.newsletter-form{ display:flex; justify-content:center; gap:0; max-width:520px; margin:0 auto 18px; border-bottom:1px solid var(--fg-faint); }
-.newsletter-form input{
-  flex:1; background:none; border:none; color:var(--fg); font-size:16px; padding:14px 4px; cursor:auto;
-}
-.newsletter-form input::placeholder{ color:var(--fg-faint); }
-.newsletter-form button{
-  font-family:var(--f-mono); font-size:12px; letter-spacing:.1em; color:var(--fg); padding:14px 6px;
-  transition:color .3s var(--ease);
-}
-.newsletter-form button:hover{ color:var(--accent); }
-.newsletter-note{ font-family:var(--f-mono); font-size:11px; color:var(--fg-faint); letter-spacing:.04em; }
 
 /* =========================================================
    CONTACT

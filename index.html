@@ -3,38 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alex Rivera — Director / Cinematographer</title>
-<meta name="description" content="Alex Rivera is a director and cinematographer working across music film, commercial and documentary.">
+<title>Vic Kohl — Director / Editor / Cinematographer / </title>
+<meta name="description" content="Vic Kohl is a director, editor, and shooter working across music film, commercial and documentary.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+<body>
 <canvas id="grain"></canvas>
 <div class="scanline" aria-hidden="true"></div>
 <div class="cursor" id="cursor"><span>VIEW</span></div>
 
-<!-- loader — percentage counter, Selected.-style -->
-<div class="loader" id="loader">
-  <div class="loader-pct" id="loaderPct">000%</div>
-</div>
-
-<!-- cookie banner -->
-<div class="cookie" id="cookie">
-  <p>We use cookies to enhance your browsing experience. By clicking "Accept", you consent to our use of cookies.</p>
-  <div class="cookie-actions">
-    <button id="cookieAccept" class="cookie-btn primary">Accept</button>
-    <button id="cookieDecline" class="cookie-btn">Decline</button>
-  </div>
-</div>
-
 <!-- nav -->
 <header class="nav">
-  <a href="#top" class="nav-logo">A. RIVERA</a>
+  <a href="#top" class="nav-logo">VIC KOHL</a>
   <button class="nav-toggle" id="navToggle" aria-label="Open menu">
     <span class="nav-toggle-label">Menu</span>
     <span class="nav-toggle-icon"><i></i><i></i></span>
@@ -52,14 +38,13 @@
     <li><a href="#sessions">Sessions</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
-  <div class="menu-wordmark">A. RIVERA</div>
+  <div class="menu-wordmark">VIC KOHL</div>
   <div class="menu-footer">
     <div class="menu-social">
       <a href="#">Instagram</a>
       <a href="#">Vimeo</a>
-      <a href="#">LinkedIn</a>
     </div>
-    <div class="menu-loc">Los Angeles — Available Worldwide</div>
+    <div class="menu-loc">Portland, Oregon — Available Worldwide</div>
   </div>
 </nav>
 
@@ -68,31 +53,20 @@
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero-media">
-      <div class="hero-video placeholder-video" data-placeholder="Replace with looping reel — .mp4, muted, autoplay, ~15s">
-        <div class="ph-grain"></div>
+      <div class="hero-video">
+        <video src="media/DMHBE_First-Look-Website.mp4" autoplay muted loop playsinline></video>
       </div>
       <div class="hero-shade"></div>
     </div>
 
     <div class="hero-content">
-      <p class="hero-eyebrow">Showreel 2026</p>
-      <h1 class="hero-title">ALEX<br>RIVERA</h1>
-    </div>
-
-    <!-- marquee strip, Selected.-style repeating ticker -->
-    <div class="marquee hero-marquee">
-      <div class="marquee-track">
-        <span>DIRECTOR&nbsp;/&nbsp;CINEMATOGRAPHER&nbsp;—&nbsp;</span>
-        <span>DIRECTOR&nbsp;/&nbsp;CINEMATOGRAPHER&nbsp;—&nbsp;</span>
-        <span>DIRECTOR&nbsp;/&nbsp;CINEMATOGRAPHER&nbsp;—&nbsp;</span>
-        <span>DIRECTOR&nbsp;/&nbsp;CINEMATOGRAPHER&nbsp;—&nbsp;</span>
-      </div>
+      <h1 class="hero-title">VIC<br>KOHL</h1>
     </div>
   </section>
 
   <!-- WORK — mirrors Selected.'s "Our Releases" -->
   <section class="work" id="work">
-    <p class="eyebrow">Our Work</p>
+    <p class="eyebrow">Work</p>
 
     <div class="marquee section-marquee">
       <div class="marquee-track">
@@ -159,25 +133,22 @@
     </div>
     <div class="about-content">
       <p class="eyebrow">About</p>
-      <h2 class="about-title">Alex Rivera</h2>
+      <h2 class="about-title">VIC KOHL</h2>
       <p class="about-lead">I make images that hold still long enough to say something, and move when they need to.</p>
       <p class="about-body">
-        Based in Los Angeles, I've spent the last eight years directing and shooting music
+        Based in Portland, I've spent the last eight years directing and shooting music
         films, commercial work, and documentary shorts for clients who care about the frame
         as much as the story. My work leans toward natural light, patient camera movement,
         and sound design that does half the storytelling.
       </p>
-      <p class="about-body">
-        Previously on set for <span class="hl">Brand One</span>, <span class="hl">Label Two</span>,
-        and <span class="hl">Studio Three</span>. Selected by <span class="hl">Publication Name</span>
-        as one to watch, 2025.
-      </p>
+      
       <ul class="about-skills">
         <li>Direction</li>
         <li>Cinematography</li>
+         <li>Editing</li>
         <li>Color Grading</li>
         <li>Photography</li>
-        <li>Editing</li>
+       
       </ul>
       <a href="#" class="about-cv">Download CV <span>↓</span></a>
     </div>
@@ -187,23 +158,9 @@
   <section class="recs" id="recommendations">
     <p class="eyebrow">Recommendations</p>
 
-    <div class="marquee section-marquee">
-      <div class="marquee-track">
-        <span>THE PEOPLE BEHIND THE PROJECTS&nbsp;—&nbsp;</span>
-        <span>THE PEOPLE BEHIND THE PROJECTS&nbsp;—&nbsp;</span>
-        <span>THE PEOPLE BEHIND THE PROJECTS&nbsp;—&nbsp;</span>
-        <span>THE PEOPLE BEHIND THE PROJECTS&nbsp;—&nbsp;</span>
-      </div>
-    </div>
-
-    <p class="section-copy">
-      Many of the people I've worked with have stayed on for years, project after project.
-      Here's what a few of them have said.
-    </p>
-
     <div class="rotator" id="rotator">
       <figure class="rotator-slide active">
-        <blockquote>Alex has an eye for the moment right before something happens. Every set felt calm because the shot list was already three steps ahead.</blockquote>
+        <blockquote>Vic has an eye for the moment right before something happens. Every set felt calm because the shot list was already three steps ahead.</blockquote>
         <figcaption><span class="rec-name">Jordan Ellis</span><span class="rec-role">Executive Producer, Studio Name</span></figcaption>
       </figure>
       <figure class="rotator-slide">
@@ -280,36 +237,15 @@
 
     </div>
 
-    <!-- ticker of names, mirrors Selected.'s artist ticker beneath Sessions -->
-    <div class="marquee ticker">
-      <div class="marquee-track">
-        <span>BRAND ONE&nbsp;·&nbsp;LABEL TWO&nbsp;·&nbsp;STUDIO THREE&nbsp;·&nbsp;PUBLICATION NAME&nbsp;·&nbsp;CLIENT NAME&nbsp;·&nbsp;</span>
-        <span>BRAND ONE&nbsp;·&nbsp;LABEL TWO&nbsp;·&nbsp;STUDIO THREE&nbsp;·&nbsp;PUBLICATION NAME&nbsp;·&nbsp;CLIENT NAME&nbsp;·&nbsp;</span>
-        <span>BRAND ONE&nbsp;·&nbsp;LABEL TWO&nbsp;·&nbsp;STUDIO THREE&nbsp;·&nbsp;PUBLICATION NAME&nbsp;·&nbsp;CLIENT NAME&nbsp;·&nbsp;</span>
-        <span>BRAND ONE&nbsp;·&nbsp;LABEL TWO&nbsp;·&nbsp;STUDIO THREE&nbsp;·&nbsp;PUBLICATION NAME&nbsp;·&nbsp;CLIENT NAME&nbsp;·&nbsp;</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- NEWSLETTER -->
-  <section class="newsletter">
-    <p class="eyebrow">Stay in the loop</p>
-    <h2>Get new work in your inbox</h2>
-    <form class="newsletter-form" id="newsletterForm">
-      <input type="email" placeholder="Your email address" required aria-label="Email address">
-      <button type="submit">Submit</button>
-    </form>
-    <p class="newsletter-note" id="newsletterNote">Occasional updates, no spam. Unsubscribe anytime.</p>
   </section>
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <p class="section-tc light">Let's talk</p>
     <h2 class="contact-title">Have a story<br>worth shooting?</h2>
-    <a href="mailto:hello@alexrivera.com" class="contact-email">hello@alexrivera.com</a>
+    <a href="mailto:info.vic.kohl@gmail.com" class="contact-email">info.vic.kohl@gmail.com</a>
     <p class="contact-blurb">
-      Based in Los Angeles, working everywhere. Not chasing trends — trying to set them,
-      one frame at a time.
+      Based in Portland, working everywhere.
     </p>
   </section>
 
@@ -327,22 +263,17 @@
       <a href="#sessions">Sessions</a>
       <a href="#contact">Contact</a>
     </div>
-    <div class="footer-col">
-      <span class="footer-heading">Legal</span>
-      <a href="#">Imprint</a>
-      <a href="#">Data Policy</a>
-    </div>
+  
     <div class="footer-col">
       <span class="footer-heading">Stay in touch</span>
       <a href="#">Instagram</a>
       <a href="#">Vimeo</a>
-      <a href="#">LinkedIn</a>
     </div>
   </div>
-  <div class="footer-wordmark">ALEX RIVERA</div>
+  <div class="footer-wordmark">VIC KOHL</div>
   <div class="footer-bottom">
-    <span>© 2026 Alex Rivera</span>
-    <span>Los Angeles, CA</span>
+    <span>© 2026 Vic Kohl</span>
+    <span>Portland, OR</span>
   </div>
 </footer>
 
